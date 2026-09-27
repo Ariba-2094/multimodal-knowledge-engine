@@ -3,6 +3,7 @@
     "frontend": { "root": "frontend", "framework": "vite" }
   },
   "rewrites": [
+    { "source": "/api/(.*)", "destination": "https://multimodal-knowledge-engine-production.up.railway.app/api/$1" },
     { "source": "/(.*)", "destination": { "type": "service", "service": "frontend" } }
   ]
 }
